@@ -10,10 +10,10 @@
 <jsp:include page="/include/resources_css.jsp"></jsp:include>
 </head>
 <body>
-
+<jsp:include page="/include/resources_preload.jsp"></jsp:include>
 
 <div id="page-transitions">
-<jsp:include page="/include/resources_preload.jsp"></jsp:include>
+
 	
 
 	<jsp:include page="/include/resources_header.jsp"></jsp:include>
@@ -30,7 +30,7 @@
 					<a href="#" class="profile-1-back back-button"><i class="fa fa-chevron-left"></i></a>
 					<a href="index.html" class="profile-logo"></a>
 					<a href="#" class="profile-1-menu menu-icon hamburger-animated" data-deploy-menu="menu-1"></a>
-					<img src="${pageContext.request.contextPath}/contents/images/BG2.jpg" class="responsive-image">
+					<img src="${pageContext.request.contextPath}/contents/images/Cow7.jpg" class="responsive-image">
 				</div>
 				<div class="profile-header-clear"></div>
 				<div class="profile-body">

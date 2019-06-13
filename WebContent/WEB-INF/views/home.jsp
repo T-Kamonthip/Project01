@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<title>Epsilon X</title>
+<title>ZyanDairy-Home</title>
 
 <jsp:include page="/include/resources_css.jsp"></jsp:include>
 </head>
@@ -15,56 +15,120 @@
 <jsp:include page="/include/resources_preload.jsp"></jsp:include>
 	
 <div id="page-transitions">		
+
 	<div id="page-content" class="page-content page-content-full">	
 		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 	
 			
-			<div class="coverpage">
-				<a href="#" class="cover-back-button back-button"><i class="fa fa-chevron-left font-12 color-white"></i></a>
-				<a href="index.html" class="cover-home-button"><i class="fa fa-home font-14 color-white"></i></a>
-
-				<div class="cover-slider owl-carousel owl-has-dots-over">
-					<div class="cover-item" style="background-image:url(contents/images/1.jpg);">
+			<a href="${pageContext.request.contextPath}/" class="cover-home-button"><i class="fa fa-home font-14 color-black"></i></a>
+			
+			<div class="coverpage coverpage-full walkthrough-buttons">
+				<a href="#" class="next-slide-custom">Next</a>
+				<a href="${pageContext.request.contextPath}/usecase" class="skip-slide-custom back-button">Skip</a>
+				<div class="cover-walkthrough-slider owl-carousel">
+					<div class="cover-item">
 						<div class="cover-content cover-content-center">
-							<h1 class="color-white center-text uppercase ultrabold full-top fa-3x">APPECA</h1>
-							<h4 class="color-white center-text uppercase ultrabold">Our Best product yet</h4>
-							<div class="deco-thick bg-orange-dark half-top half-bottom"></div>
-							<p class="color-white center-text opacity-70">Any icon you want from FontAwesome, and any color or size you want as well!</p>
-							<a href="#" class="button button-blue color-white button-round button-center uppercase ultrabold button-s">Get started</a>
-						</div>
-						<div class="cover-overlay overlay bg-black opacity-90"></div>
-					</div>		
-					<div class="cover-item" style="background-image:url(contents/images/2.jpg);">
-						<div class="cover-content cover-content-bottom">
-							<h2 class="color-white left-text uppercase ultrabold full-top">Coverpages rock</h2>
-							<p class="color-white left-text opacity-70 no-bottom">The coverpage slider is made to be flexible, and easy to style, give it a quick swipe left.</p>
-						</div>
-						<div class="cover-overlay overlay overlay-gradient-small"></div>
-					</div>				
-					<div class="cover-item" style="background-image:url(contents/images/3.jpg);">
-						<div class="cover-content cover-content-center">
-							<h1 class="center-text"><i class="fa-3x fa fa-star color-yellow-dark"></i></h1>
-							<h1 class="color-white center-text uppercase ultrabold full-top fa-2x">Hello Icons</h1>
-							<p class="color-white boxed-text center-text opacity-70 full-bottom">Any icon you want from FontAwesome, and any color or size you want as well!</p>
-							<a href="#" class="button button-yellow color-white button-round button-center uppercase ultrabold button-s">Awww yeah</a>
-						</div>
-						<div class="cover-overlay overlay bg-black opacity-70"></div>
-					</div>		
-					<div class="cover-item" style="background-image:url(contents/images/4.jpg);">
-						<div class="cover-content cover-content-center cover-content-center-full">
-							<h4 class="color-white left-text uppercase ultrabold half-bottom">FIND YOUR</h4>
-							<h1 class="color-white left-text uppercase ultrabold half-bottom fa-4x">STYLE</h1>
-							<h2 class="color-white left-text uppercase ultrabold full-bottom">It's super easy</h2>
-							<p class="color-white no-bottom opacity-50">
-								It's easy, play with classes, there are<br>
-								infinite styles for you to find!
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/1.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								แสดงพิกัดฟาร์มและฟาร์มใกล้เคียง
 							</p>
-							<a href="#" class="button button-red color-white button-round uppercase ultrabold button-s full-top">Get started</a>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม </a>
 						</div>
-						<div class="cover-overlay overlay bg-black opacity-30"></div>
+					</div>	
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/2.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								We broke down a plan, to take on the worlds biggest frameworks, and make our products better.
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide">  ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>	
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/3.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong> <br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Appeca is documented for the average user, you don't need to be a rocket scientist to use it.
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>		
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/4.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								We're here to help you make your product and our dream come true. Read the docs, write a ticket!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>			
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/5.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
 					</div>
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/6.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>	
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/7.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>	
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/8.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/9.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>
+					<div class="cover-item">
+						<div class="cover-content cover-content-center">
+							<img class="cover-icon" src="${pageContext.request.contextPath}/contents/images/10.jpg">
+							<h4 class="regular center-text half-bottom"><strong> ZYAN </strong><strong style="color: #FF9393;"> DAIRY </strong><br> ระบบบริหารจัดการฟาร์มโคนม </h4>
+							<p class="center-text opacity-50 full-bottom">
+								Be sure to check out all the pages, there are tones to see and we add more constantly!
+							</p>
+							<a href="${pageContext.request.contextPath}/usecase" class="button button-blue button-blue-3d button-rounded button-center button-s uppercase ultrabold next-slide"> ผู้ใช้งานเซียนแดรี่ฟาร์ม  </a>
+						</div>
+					</div>
+									
 				</div>
+				
 			</div>
-					
 		</div>  
 	</div>
 	

@@ -10,9 +10,9 @@
 <jsp:include page="/include/resources_css.jsp"></jsp:include>
 </head>
 <body>
-
+<jsp:include page="/include/resources_preload.jsp"></jsp:include>
 <div id="page-transitions">
-	<jsp:include page="/include/resources_preload.jsp"></jsp:include>
+	
 		
 	
 		<jsp:include page="/include/resources_header.jsp"></jsp:include>
