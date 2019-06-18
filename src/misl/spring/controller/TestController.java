@@ -15,28 +15,17 @@ import misl.spring.model.CowModel;
 import misl.spring.model.MemberModel;
 
 @Controller
-@RequestMapping("/member/cow")
-public class CowController {
+@RequestMapping("/test")
+public class TestController {
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView home(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
 		response.setContentType("text/html;charset=UTF-8");
 		
-		ModelAndView model = new ModelAndView("member/cow/home");
+		ModelAndView model = new ModelAndView("test/home");
 		try {
-			return model;
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
-		return model;	
-	}
-	
-	@RequestMapping(value = "/manage", method = RequestMethod.GET)
-	public ModelAndView manage(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
-		response.setContentType("text/html;charset=UTF-8");
-		
-		ModelAndView model = new ModelAndView("member/cow/manage");
-		try {
+			
+			//DataBase Query
+			//
 			MemberModel memberModel = new MemberModel();
 			memberModel.setMemberId(10);
 			memberModel.setMemberName("Daniel");
@@ -60,7 +49,36 @@ public class CowController {
 			//End DataBase
 			
 			request.setAttribute("cowList", cowList);
+			
 			return model;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return model;	
+	}
+	
+	@RequestMapping(value = "/profile", method = RequestMethod.GET)
+	public ModelAndView profile(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		
+		ModelAndView model = new ModelAndView("test/profile");
+		try {
+			
+			//DataBase Query
+			//
+			MemberModel memberModel = new MemberModel();
+			memberModel.setMemberId(10);
+			memberModel.setMemberName("Daniel");
+			memberModel.setMemberLastname("Kang");
+			memberModel.setMemberAddr("Seoul, South Korea");
+			memberModel.setMemberTel("0904203058");
+			
+			//End DataBase
+			request.setAttribute("member", memberModel);
+			
+			return model;
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

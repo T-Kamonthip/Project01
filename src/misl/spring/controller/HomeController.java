@@ -1,5 +1,7 @@
 package misl.spring.controller;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import misl.spring.model.GraphModel;
 import misl.spring.model.JsonResponseModel;
 
 @Controller
@@ -172,6 +175,48 @@ public class HomeController {
 			}
 			
 			
+			return model;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return model;
+		
+	}
+	
+	@RequestMapping(value = "/charts", method = RequestMethod.GET)
+	public ModelAndView chart(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		
+		ModelAndView model = new ModelAndView("charts");
+		
+		
+		try {
+			ArrayList<GraphModel> data = new ArrayList<GraphModel>();
+			for(int i=0; i<7; i++) {
+				GraphModel graph = new GraphModel();
+				graph.setData((int)(Math.random()*100+1));
+				
+				data.add(graph);
+			}
+			
+			request.setAttribute("data", data);
+			
+
+			return model;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return model;
+		
+	}
+	@RequestMapping(value = "/map", method = RequestMethod.GET)
+	public ModelAndView map(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+		response.setContentType("text/html;charset=UTF-8");
+		
+		ModelAndView model = new ModelAndView("map");
+		try {
 			return model;
 		} catch (Exception e) {
 			// TODO: handle exception

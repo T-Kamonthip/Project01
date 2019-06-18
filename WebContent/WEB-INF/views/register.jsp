@@ -34,7 +34,7 @@
 				</div>
 				<div class="profile-header-clear"></div>
 				<div class="profile-body">
-					<a href="#" class="profile-button button box-shadow button-s button-round bold button-green button-center" style="font-size: 20px; width: 50%;"> 	เข้าสู่ระบบ </a>					
+					<a href="#" class="profile-button button box-shadow button-s button-round bold button-green button-center" style="font-size: 20px; width: 50%;"> 	ลงทะเบียน </a>					
 					<h1 class="profile-heading color-black"> ลงทะเบียน </h1>
 					<h2 class="profile-sub-heading"> สวัสดีค่ะ, คุณสามารถลงชื่อเพื่อเข้าไช้งานได้ที่นี่ </h2>
 					

@@ -37,16 +37,14 @@
 		
 		<ul id="sortable" class="link-list">		
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-pen-square color-green-dark"></i><span> ตั้งชื่อฟาร์ม </span></a></li>				
-			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-map-marked color-blue-dark"></i><span> ตั้งพิกัดฟาร์ม </span></a></li>		
+			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-map color-blue-dark"></i><span> ตั้งพิกัดฟาร์ม </span></a></li>		
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-20 fa fa-user-plus color-red-dark"></i><span> เพิ่มผู้ใช้งานเสริม </span></a></li>		
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-17 fa fa-bell color-green2-dark"></i><span> บันทึกแจ้งเตือนกิจกรรม </span></a></li>		
-			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-16 fa fa-sign-in-alt color-gray-dark"></i><span> นำเข้าน้ำเชื้อ </span></a></li>	
-			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-sign-in-alt color-yellow-dark"></i><span> นำเข้าโค </span></a></li>
+			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-16 fa fa-sign-in color-gray-dark"></i><span> นำเข้าน้ำเชื้อ </span></a></li>	
+			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-sign-in color-yellow-dark"></i><span> นำเข้าโค </span></a></li>
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-save color-green-dark"></i><span> บันทึกการผสมพันธุ์ </span></a></li>
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-stethoscope color-pink-dark"></i><span> ตรวจการตั้งท้องโค </span></a></li>
-			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-save color-red-dark"></i><span> บันทึกการดราย	</span></a></li>
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-save color-black-dark"></i><span> บันทึกการคลอด	</span></a></li>
-			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-save color-orange-dark"></i><span> บันทึกน้ำนม	</span></a></li>
 			<li><a href="#"><i class="fa fa-angle-right"></i><i class="font-18 fa fa-cog color-magenta-dark"></i><span> ตั้งค่าการแจ้งเตือนอุปกรณ์	</span></a></li>
 		</ul>
 		
